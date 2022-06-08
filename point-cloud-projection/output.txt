@@ -1,0 +1,924 @@
+XLink initialized.
+Sending internal device firmware
+Successfully connected to device.
+Loading config file
+Attempting to open stream config_d2h
+watchdog started 
+Successfully opened stream config_d2h with ID #0!
+Closing stream config_d2h: ...
+Closing stream config_d2h: DONE.
+EEPROM data: valid (v5)
+  Board name     : BW1098OBC
+  Board rev      : R0M0E0
+  HFOV L/R       : 71.86 deg
+  HFOV RGB       : 68.7938 deg
+  L-R   distance : 7.5 cm
+  L-RGB distance : 3.75 cm
+  L/R swapped    : yes
+  L/R crop region: center
+  Rectification Rotation R1 (left):
+    0.999960,    0.007945,   -0.004084,
+   -0.007950,    0.999967,   -0.001350,
+    0.004073,    0.001383,    0.999991,
+  Rectification Rotation R2 (right):
+    0.999964,    0.005095,   -0.006771,
+   -0.005086,    0.999986,    0.001384,
+    0.006778,   -0.001349,    0.999976,
+  Calibration intrinsic matrix M1 (left):
+  850.652588,    0.000000,  630.719055,
+    0.000000,  850.614746,  396.302094,
+    0.000000,    0.000000,    1.000000,
+  Calibration intrinsic matrix M2 (right):
+  849.711304,    0.000000,  640.921448,
+    0.000000,  850.221008,  403.711212,
+    0.000000,    0.000000,    1.000000,
+  Calibration rotation matrix R:
+    0.999992,    0.002868,    0.002700,
+   -0.002861,    0.999992,   -0.002720,
+   -0.002708,    0.002712,    0.999993,
+  Calibration translation matrix T:
+   -7.483683,
+   -0.038132,
+    0.050671,
+  Calibration Distortion Coeff d1 (Left):
+   -4.896651,   14.495415,    0.002622,   -0.000418,  -13.189638,   -4.956257,   14.724713,
+  -13.409710,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,
+  Calibration Distortion Coeff d2 (Right):
+   -5.252749,   16.473549,    0.002025,   -0.001394,  -15.992131,   -5.300548,   16.653940,
+  -16.163187,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,
+
+No NN config provided, defaulting to "raw" output format!
+depthai: Calibration file is not specified, will use default setting;
+config_h2d json:
+{"_board":{"calib_data":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"mesh_left":[0.0],"mesh_right":[0.0]},"_load_inBlob":true,"_pipeline":{"_streams":[{"name":"right"},{"data_type":"uint16","name":"depth"}]},"ai":{"NCEs":1,"NN_config":{"output_format":"raw"},"blob0_size":14489664,"blob1_size":0,"calc_dist_to_bb":false,"camera_input":"rgb","cmx_slices":7,"keep_aspect_ratio":true,"num_stages":1,"shaves":7},"app":{"sync_sequence_numbers":false,"sync_video_meta_streams":false,"usb_chunk_KiB":64},"board":{"clear-eeprom":false,"left_fov_deg":69.0,"left_to_rgb_distance_m":0.0,"left_to_right_distance_m":0.03500000014901161,"name":"","override-eeprom":false,"revision":"","rgb_fov_deg":69.0,"stereo_center_crop":false,"store-to-eeprom":false,"swap-left-and-right-cameras":false},"camera":{"mono":{"fps":30.0,"resolution_h":720,"resolution_w":1280},"rgb":{"fps":30.0,"resolution_h":1080,"resolution_w":1920}},"depth":{"depth_limit_mm":10000,"lr_check":false,"median_kernel_size":7,"padding_factor":0.30000001192092896,"warp_rectify":{"edge_fill_color":-1,"mirror_frame":true,"use_mesh":false}},"ot":{"confidence_threshold":0.5,"max_tracklets":20}}
+size of input string json_config_obj to config_h2d is ->1547
+size of json_config_obj that is expected to be sent to config_h2d is ->1048576
+Attempting to open stream config_h2d
+Successfully opened stream config_h2d with ID #1!
+Writing 1048576 bytes to config_h2d
+!!! XLink write successful: config_h2d (1048576)
+Closing stream config_h2d: ...
+Closing stream config_h2d: DONE.
+Creating observer stream host_capture: ...
+Attempting to open stream host_capture
+Successfully opened stream host_capture with ID #0!
+Creating observer stream host_capture: DONE.
+Read: 14489664
+Attempting to open stream inBlob
+Successfully opened stream inBlob with ID #1!
+Writing 14489664 bytes to inBlob
+!!! XLink write successful: inBlob (14489664)
+Closing stream inBlob: ...
+Closing stream inBlob: DONE.
+depthai: done sending Blob file \\ad\eng\users\j\a\jamih\Documents\depthai-experiments\point-cloud-projection\mobilenet-ssd\mobilenet-ssd.blob
+Attempting to open stream outBlob
+Successfully opened stream outBlob with ID #2!
+Closing stream outBlob: ...
+Closing stream outBlob: DONE.
+Input layer : 
+Name: data
+Index: 0
+Element type: uint8
+Element size:  1byte
+Offset: 0 byte
+Dimensions: [Batch : 1, Channel : 3, Height : 300, Width : 300]
+
+Output layer : 
+Name: detection_out
+Index: 0
+Element type: float16
+Element size:  2 bytes
+Offset: 0 byte
+Dimensions: [Batch : 1, Channel : 1, Height : 100, Width : 7]
+
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.146837057105836 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3330768648989295 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1528941242658926 0.0
+Y max: %d, Y min: %d 2.4109589663396775 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1528941242658926 0.0
+Y max: %d, Y min: %d 2.2488118088735294 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.5542719026906435 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.296249701230169 0.0
+Y max: %d, Y min: %d 2.3466215781929725 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.987320040279381 0.0
+Y max: %d, Y min: %d 2.33646304322244 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.339849221545951 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.225097300815473 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.303026120317282 0.0
+Y max: %d, Y min: %d 2.417731322986699 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.400800431369145 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.33646304322244 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.353393934839994 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.049053053294033 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.2909973117816906 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.8964409750904525 0.0
+Y max: %d, Y min: %d 1.996511531640907 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.2308128486041046 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 1.9472877519239742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1528941242658926 0.0
+Y max: %d, Y min: %d 1.9499224207581058 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.297487389152177 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.360166291487016 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.135235454890018 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3500077565164834 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.326304508251908 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.319967168035067 0.0
+Y max: %d, Y min: %d 2.147910876040675 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.135235454890018 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.319967168035067 0.0
+Y max: %d, Y min: %d 2.282284190046268 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.360166291487016 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.2877522730964475 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1528941242658926 0.0
+Y max: %d, Y min: %d 2.319532151604886 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.305987438310843 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.218320881728359 0.0
+Y max: %d, Y min: %d 2.404186609692656 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.2747721183554748 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3703248264575483 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.2958289033403108 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.14039206222655 0.0
+Y max: %d, Y min: %d 2.343235399869462 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.339849221545951 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.177662367205676 0.0
+Y max: %d, Y min: %d 2.4075727880161666 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.177662367205676 0.0
+Y max: %d, Y min: %d 2.297487389152177 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.143780271770107 0.0
+Y max: %d, Y min: %d 2.387255718075102 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.294242350466934 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.248814767620372 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3330768648989295 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.164109529031449 0.0
+Y max: %d, Y min: %d 2.329937776004609 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.27253223442527 0.0
+Y max: %d, Y min: %d 2.24842240681116 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.4109589663396775 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.194603414923461 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.225097300815473 0.0
+Y max: %d, Y min: %d 2.3137125825783933 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.221709091271916 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.181050576749233 0.0
+Y max: %d, Y min: %d 2.322918329928397 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.3500077565164834 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.269144024881713 0.0
+Y max: %d, Y min: %d 2.383869539751591 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.174274157662119 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.123451014508766 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.248814767620372 0.0
+Y max: %d, Y min: %d 2.383869539751591 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.3770971831045697 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2318737199025875 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.228485510359031 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.218320881728359 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.225097300815473 0.0
+Y max: %d, Y min: %d 2.3804833614280803 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.3906418963986127 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.3804833614280803 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2318737199025875 0.0
+Y max: %d, Y min: %d 2.353393934839994 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.228485510359031 0.0
+Y max: %d, Y min: %d 2.356780113163505 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.221709091271916 0.0
+Y max: %d, Y min: %d 2.322918329928397 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.228485510359031 0.0
+Y max: %d, Y min: %d 2.305987438310843 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.214932672184802 0.0
+Y max: %d, Y min: %d 2.322918329928397 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.2992150816638217 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.24015982981334 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.326692737319366 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.3169576212636365 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.208156253097688 0.0
+Y max: %d, Y min: %d 2.329937776004609 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.353393934839994 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.252202977163929 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.255591186707486 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2623676057946 0.0
+Y max: %d, Y min: %d 2.360166291487016 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.417731322986699 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.201379834010575 0.0
+Y max: %d, Y min: %d 2.397414253045634 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2318737199025875 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.343235399869462 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.197991624467018 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.218320881728359 0.0
+Y max: %d, Y min: %d 2.353393934839994 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.3039774665226633 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.4109589663396775 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.248814767620372 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2047680435541315 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3770971831045697 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.218320881728359 0.0
+Y max: %d, Y min: %d 2.356780113163505 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3331828146898523 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.197991624467018 0.0
+Y max: %d, Y min: %d 2.33646304322244 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.197991624467018 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.194603414923461 0.0
+Y max: %d, Y min: %d 2.3127597949578647 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2047680435541315 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.343235399869462 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2047680435541315 0.0
+Y max: %d, Y min: %d 2.397414253045634 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.068472507979018 0.0
+Y max: %d, Y min: %d 2.3330768648989295 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.343235399869462 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.042496626044595 0.0
+Y max: %d, Y min: %d 2.319532151604886 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.323355377578624 0.0
+Y max: %d, Y min: %d 2.3770971831045697 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.208156253097688 0.0
+Y max: %d, Y min: %d 2.322918329928397 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.187826995836347 0.0
+Y max: %d, Y min: %d 2.339849221545951 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.194603414923461 0.0
+Y max: %d, Y min: %d 2.2721256550757354 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.99808726139716 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.061978537495412 0.0
+Y max: %d, Y min: %d 2.356780113163505 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.228485510359031 0.0
+Y max: %d, Y min: %d 2.4075727880161666 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.023014714593777 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.8896645560033387 0.0
+Y max: %d, Y min: %d 2.4245036796337205 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.08618070952964 0.0
+Y max: %d, Y min: %d 2.397414253045634 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.4245036796337205 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.957428746874477 0.0
+Y max: %d, Y min: %d 2.387255718075102 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2318737199025875 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.0082518900278306 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.08618070952964 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.221709091271916 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.006779788384763 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1065099667909815 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.255591186707486 0.0
+Y max: %d, Y min: %d 2.4278898579572314 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.018416518658501 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.211544462641245 0.0
+Y max: %d, Y min: %d 2.404186609692656 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.228485510359031 0.0
+Y max: %d, Y min: %d 2.4109589663396775 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.143780271770107 0.0
+Y max: %d, Y min: %d 2.31046754389315 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.00353280314296 0.0
+Y max: %d, Y min: %d 2.3669386481340373 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.191215205379904 0.0
+Y max: %d, Y min: %d 2.414345144663188 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.079404290442526 0.0
+Y max: %d, Y min: %d 2.3940280747221236 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.987922632766489 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.109898176334538 0.0
+Y max: %d, Y min: %d 2.3635524698105264 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.1065099667909815 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.181050576749233 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.242038348533258 0.0
+Y max: %d, Y min: %d 2.4245036796337205 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.2318737199025875 0.0
+Y max: %d, Y min: %d 2.404186609692656 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.245426558076815 0.0
+Y max: %d, Y min: %d 2.31046754389315 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.414345144663188 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.052237581770004 0.0
+Y max: %d, Y min: %d 2.3906418963986127 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.153944900400778 0.0
+Y max: %d, Y min: %d 2.4075727880161666 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.089568919073197 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.18443878629279 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.0489905965282 0.0
+Y max: %d, Y min: %d 2.4245036796337205 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 3.9811462136793754 0.0
+Y max: %d, Y min: %d 2.3169576212636365 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.116674595421652 0.0
+Y max: %d, Y min: %d 2.42111750131021 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.3335200062092945 0.0
+Y max: %d, Y min: %d 2.431276036280742 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.238650138989701 0.0
+Y max: %d, Y min: %d 2.414345144663188 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.225097300815473 0.0
+Y max: %d, Y min: %d 2.4245036796337205 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.235261929446144 0.0
+Y max: %d, Y min: %d 2.329937776004609 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.181050576749233 0.0
+Y max: %d, Y min: %d 2.343235399869462 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.252202977163929 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.252202977163929 0.0
+Y max: %d, Y min: %d 2.434662214604253 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.092957128616754 0.0
+Y max: %d, Y min: %d 2.3202026599488796 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.208156253097688 0.0
+Y max: %d, Y min: %d 2.3161459732813756 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+**************
+X max: %d, X min: %d 4.079404290442526 0.0
+Y max: %d, Y min: %d 2.329937776004609 0.0
+Z max: %d, Z min: %d 2.878999948501587 0.6970000267028809
+CNN to depth bounding-box mapping: start(318, 38), max_size(643, 643)
+Host stream start:right
+Opening stream for read: right
+Attempting to open stream right
+Successfully opened stream right with ID #1!
+Starting thread for stream: right
+Host stream start:depth
+Opening stream for read: depth
+Attempting to open stream depth
+Successfully opened stream depth with ID #2!
+Starting thread for stream: depth
+Started thread for stream: right
+depthai: INIT OK!
+Started thread for stream: depth
+=== New data in observer stream host_capture, size: 4
+Writing 4 bytes to host_capture
+!!! XLink write successful: host_capture (4)
+Stopping threads: ...
+[31mF: [global] [         0] [EventRead00Thr] dispatcherEventReceive:91	Duplicate id detected. 
+[0m
+[31mF: [xLink] [         0] [Scheduler00Thr] dispatcherResponseServe:768	no request for this response: XLINK_WRITE_RESP 1
+[0m
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+[35mE: [global] [         0] [] addEvent:264	Condition failed: event->header.flags.bitField.ack != 1[0m
+[35mE: [global] [         0] [] addEvent:264	Condition failed: event->header.flags.bitField.ack != 1[0m
+[35mE: [global] [         0] [] addEventWithPerf:276	 addEvent(event) method call failed with an error: 3[0m
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+[35mE: [global] [         0] [] XLinkReadData:156	[35mE: [global] [         0] [] addEventWithPerf:276	 addEvent(event) method call failed with an error: 3[0m
+Condition failed: (addEventWithPerf(&event, &opTime))[0m
+Device get data failed: 7
+Closing stream depth: ...
+[35mE: [global] [         0] [] XLinkReadData:156	Condition failed: (addEventWithPerf(&event, &opTime))[0m
+Device get data failed: 7
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+Closing stream right: ...
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+Closing stream depth: DONE.
+Thread for depth finished.
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+[31mF: [global] [         0] [EventRead00Thr] dispatcherEventReceive:91	Duplicate id detected. 
+[0m
+[31mF: [global] [         0] [EventRead00Thr] dispatcherEventReceive:91	Duplicate id detected. 
+[0m
+[31mF: [global] [         0] [EventRead00Thr] dispatcherEventReceive:91	Duplicate id detected. 
+[0m
+[31mF: [global] [         0] [EventRead00Thr] dispatcherEventReceive:91	Duplicate id detected. 
+[0m
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:552	Assertion Failed: stream 
+[0m
+[35mE: [global] [         0] [EventRead00Thr] handleIncomingEvent:543	Assertion Failed: event->header.type >= XLINK_WRITE_REQ && event->header.type != XLINK_REQUEST_LAST && event->header.type < XLINK_RESP_LAST 
+[0m
+
+WinUsb_WritePipe failed with error:=433
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_CLOSE_STREAM_REQ
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+
+WinUsb_WritePipe failed with error:=22
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_WRITE_RESP
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+Closing stream right: DONE.
+Thread for right finished.
+Stopping threads: DONE 0.023s.
+Closing all observer streams: ...
+Closing stream host_capture: ...
+
+WinUsb_WritePipe failed with error:=22
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_CLOSE_STREAM_REQ
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+
+WinUsb_WritePipe failed with error:=22
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_WRITE_RESP
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+Closing stream host_capture: DONE.
+Closing all observer streams: DONE.
+Reseting device: 0.
+
+WinUsb_WritePipe failed with error:=22
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_WRITE_RESP
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+
+WinUsb_WritePipe failed with error:=22
+[35mE: [global] [         0] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -2) | event XLINK_RESET_REQ
+[0m
+[35mE: [xLink] [         0] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+Reseting: DONE.
